@@ -1,182 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAT Cargo VAD LLC</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        nav {
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero-text {
-            max-width: 500px;
-            padding: 20px;
-            animation: slideInLeft 1.5s ease;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .hero-img img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 10px;
-            animation: slideInRight 1.5s ease;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .contact {
-            background: #e9e9e9;
-            padding: 60px 20px;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Appnology OU</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #004d7a;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header p {
+      font-size: 15px;
+    }
+    .section {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 40px 20px;
+    }
+    .section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+    .section h2 {
+      color: #004d7a;
+      margin-bottom: 10px;
+    }
+    .section p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">PAT Cargo VAD LLC</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+  <h1>Appnology OU</h1>
+  <p>Email: support@appnologyou.shop | Phone: +37258311946</p>
+  <p>Address: Tulika tn 32/1 Tallinn, 10613 Estonia</p>
+</header>
 
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <h1>PAT Cargo VAD LLC</h1>
-            <p>Your trusted partner in transportation and warehousing. We provide reliable cargo services and storage solutions to meet your business needs with efficiency and care.</p>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=934&q=80" alt="Cargo Services">
-        </div>
-    </div>
+<div class="section">
+  <img src="https://base22.com/wp-content/uploads/2023/03/designing_hr_portals_1600x1067px.jpg" alt="HR Portals">
+  <h2>Our Mission</h2>
+  <p>Appnology OU offers streamlined business support and administrative services to help companies operate more efficiently. We combine innovation and experience to serve clients across multiple sectors.</p>
+</div>
 
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>PAT Cargo VAD LLC is a Domestic LLC based in Arizona, offering specialized services in transportation and warehousing. With a focus on reliability and customer satisfaction, we have been serving businesses since 2021.</p>
-        <p><strong>Registered Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=07cb2d135094dc3c649008e49c201d0971a5eba4-3986726-images-thumbs&n=13" alt="Workspace">
+  <h2>Modern Digital Infrastructure</h2>
+  <p>We build, maintain, and optimize administrative systems using the latest technologies. Our platforms are secure, scalable, and tailored to meet your business needs.</p>
+</div>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:contact@patcargovadllc.click">contact@patcargovadllc.click</a></p>
-        <p><strong>Agent Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<div class="section">
+  <img src="https://static.tildacdn.com/tild6161-3335-4864-b166-323737616130/nuernberger-communic.jpg" alt="Team">
+  <h2>Trusted Partnerships</h2>
+  <p>Our clients trust us for our reliability, attention to detail, and commitment to long-term results. We believe in creating partnerships that drive sustainable success.</p>
+</div>
 
-    <footer>
-        &copy; 2025 PAT Cargo VAD LLC. All rights reserved.
-    </footer>
+<div class="section">
+  <img src="https://territrott.wordpress.com/wp-content/uploads/2016/12/admin-srvc.jpg" alt="Admin Services">
+  <h2>Administrative Services</h2>
+  <p>From HR solutions to technical support, Appnology OU covers the full spectrum of administrative operations, giving your team the freedom to focus on growth and innovation.</p>
+</div>
 
-    <script>
-        // Intersection Observer for fade-in effect
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/get-altay/2799320/2a00000171ed46e89bd7b1544a2cda31c31c/XXL_height" alt="Business Strategy">
+  <h2>Future-Ready Strategies</h2>
+  <p>With forward-thinking strategies, we help businesses adapt to market changes and leverage digital tools for optimal results in a competitive environment.</p>
+</div>
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+<footer>
+  &copy; 2025 Appnology OU – All Rights Reserved
+</footer>
 
 </body>
 </html>
